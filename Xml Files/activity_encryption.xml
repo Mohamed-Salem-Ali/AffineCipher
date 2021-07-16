@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:andriod="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    tools:context=".Encryption">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="60sp"
+        android:textColor="#CFD0E4"
+        android:text="Encryption" />
+
+    <TextView
+        android:id="@+id/text_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignBottom ="@+id/textView1"
+        android:layout_marginBottom="-90dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#CFD0E4"
+        android:textSize="20sp"
+        android:text="Key a=" />
+
+    <EditText
+        android:id="@+id/a"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text_a"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="-8dp"
+        android:ems="3"
+        android:inputType="number"
+        android:textColor="#CFD0E4"
+        android:text=""
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignBottom ="@+id/textView1"
+        android:layout_marginBottom="-90dp"
+        android:layout_marginLeft="210dp"
+        android:textColor="#CFD0E4"
+        android:textSize="20sp"
+        android:text="Key b=" />
+
+
+    <EditText
+        android:id="@+id/b"
+        android:layout_width="83dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text_b"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="-8dp"
+        android:ems="1"
+        android:text=""
+        android:textColor="#CFD0E4"
+        android:inputType="number"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/plainText_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignBottom ="@+id/textView1"
+        android:layout_marginBottom="-180dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#CFD0E4"
+        android:textSize="20sp"
+        android:text="PlainText=" />
+
+    <EditText
+        android:id="@+id/PlanText"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/plainText_1"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="140dp"
+        android:ems="1"
+        android:textColor="#CFD0E4"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/Encrypt"
+        android:background="@color/colorPrimary"
+        android:textColor="#CFD0E4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:text="Encrypt"
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/cipherText_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignBottom ="@+id/Encrypt"
+        android:layout_marginBottom="-80dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#CFD0E4"
+        android:textSize="20sp"
+        android:text="CipherText =" />
+
+    <TextView
+        android:id="@+id/cipherText_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignBottom ="@+id/cipherText_1"
+        android:layout_marginLeft="170dp"
+        android:textColor="#CFD0E4"
+        android:textSize="20sp"
+        android:text="" />
+
+</RelativeLayout>
